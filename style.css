@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eef2f3;
+  color: #222;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  color: #ff4b2b;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.nav {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease-in-out;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 25px;
+  margin: 0 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.08);
+}
+
+button {
+  background: #ff4b2b;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #c70039;
+  transform: scale(1.12);
+}
+
+.content {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.image-container img:hover {
+  transform: scale(1.07);
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: white;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
